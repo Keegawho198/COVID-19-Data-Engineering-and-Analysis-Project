@@ -1,4 +1,4 @@
-Date,Country Code,Country,Continent,WHO Region,New Cases,Cumulative Cases,New Deaths,Cumulative Deaths,Latitude,Longtitude
+Date,Country Code,Country,Continent,WHO Region,New Cases,Cumulative Cases,New Deaths,Cumulative Deaths,Latitude,Longitude
 2020-03-29,AF,Afghanistan,Asia,EMRO,67.0,91,2.0,2,33.93911,67.709953
 2020-04-05,AF,Afghanistan,Asia,EMRO,183.0,274,3.0,5,33.93911,67.709953
 2020-04-12,AF,Afghanistan,Asia,EMRO,247.0,521,10.0,15,33.93911,67.709953
