@@ -1,4 +1,4 @@
-# Project_3
+# COVID-19 Data Engineering and Analysis Project
 Purpose of this Project:
 
 The purpose of this project is to perform comprehensive data engineering and analysis on global COVID-19 datasets to derive meaningful insights. This involves cleaning, sorting, and filtering raw datasets to ensure accuracy and consistency, enabling the creation of a structured and actionable new dataset. The analysis focuses on identifying trends in COVID-19 cases and deaths, including global maximums and minimums, while also conducting a detailed examination of Australia’s data to understand the total cases and deaths in the region.
