@@ -15,7 +15,7 @@ o    Explored the correlation between new cases and new deaths to identify poten
 o    Filtered the dataset to focus on Australia.
 o    Calculated the average, maximum, and minimum for new COVID-19 cases and deaths specifically for Australia.
 5.    Data Summarization with Pivot Table:
-o    Applied the pivot_table() function (a feature not covered in class) to summarize the data efficiently and gain deeper insights.
+o    Applied the pivot_table() function to summarize the data efficiently and gain deeper insights.
 6.    Exporting Data:
 o    Converted the complete cleaned and processed dataset into a new CSV file, ensuring the data is ready for further analysis or reporting.
 By addressing these questions, the team applied various data engineering and analytical techniques to extract meaningful insights, demonstrating a robust understanding of real-world data processing and analysis.
