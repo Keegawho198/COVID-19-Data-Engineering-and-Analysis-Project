@@ -1,0 +1,19 @@
+Country with Maximum Cases: Country              United States of America
+Cumulative Cases                  103436829.0
+Cumulative Deaths                   1127152.0
+Name: 196, dtype: object
+
+Country with Minimum Cases: Country              Montserrat
+Cumulative Cases         1003.0
+Cumulative Deaths           8.0
+Name: 124, dtype: object
+
+Country with Maximum Deaths: Country              United States of America
+Cumulative Cases                  103436829.0
+Cumulative Deaths                   1127152.0
+Name: 196, dtype: object
+
+Country with Minimum Deaths: Country               Nauru
+Cumulative Cases     3970.0
+Cumulative Deaths       1.0
+Name: 128, dtype: object
