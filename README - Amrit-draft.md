@@ -19,81 +19,80 @@ This project focuses on demonstrating a comprehensive understanding of data engi
 ---
 
 ## Instructions  
-
-### 1. Setup  
+ 
 - Clone the repository:  
-  ```bash
-  git clone <https://github.com/Keegawho198/COVID-19-Data-Engineering-and-Analysis-Project>
-  cd <PANDAS-Jupyter Notebook/COVID-19-ETL-Project.ipynb/>
-    
-Install dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Set up the database:
-Follow the instructions in the setup_database.md file to initialize your database.
-2. Run ETL Workflow
-Execute the ETL script to ingest and transform data into the database:
+git clone <https://github.com/Keegawho198/COVID-19-Data-Engineering-and-Analysis-Project>
+  cd <PANDAS-Jupyter Notebook/COVID-19-ETL-Project.ipynb/></br></br>
+and run the code in Pandas Jupyter Notebook.
 
-bash
-Copy code
-python etl.py
-3. Access Data
-To view data in a Pandas DataFrame, run:
-bash
-Copy code
-python retrieve_data.py
-To access data via API, start the Flask server:
-bash
-Copy code
-flask run
-Navigate to http://127.0.0.1:5000/data to view the JSON output.
-4. Optional User Interaction
-If applicable, use the interactive menu to refine data extraction or retrieval processes.
+## Data Engineering process
+This data engineering project has been divided in 4 stages.</br>
+#### Stage 1 (Mandeep Sohi)
+#### Data selection
+As a team we decieded to use COVID-19 statistics on a global scale to perform comprehensive data engineering and analysis. 
 
-Database Documentation
-Type of Database:
-The project uses [SQL/NoSQL]. Example:
+##### Data importation (Extraction)
+This project uses pandas library to read the csv files.</br>
+<pre> 
+# read the 'countries.csv' files and store into panadas DataFrame
+countries_dataset = pd.read_csv("Resources/countries.csv")
+countries_dataset.head()</pre>
+<pre># read the 'WHO COVID-19 cases.csv' files and store into panadas DataFrame
+covid_cases_dataset = pd.read_csv("Resources/WHO COVID-19 cases.csv")
+covid_cases_dataset.head()</pre>
 
-PostgreSQL for structured data with complex relationships.
-MongoDB for unstructured or hierarchical data.
-Database Structure:
+##### Data cleaning (Transformation)
+The data was cleaned using following steps:
 
-ERD or schema diagrams are included in the docs/ERD_diagram.png file.
-Tables/Collections:
-table_1/collection_1: Description
-table_2/collection_2: Description
-ETL Workflow
-The ETL process consists of the following steps:
+- Rename the common columns for merging process
+- Merge the csv file to form a complete dataset
+- Drop unnecessary columns
+- Handle missing and duplicate data
+- Check and adjust datatypes
 
-Extraction:
-Retrieve data from [source], such as CSV, APIs, or other datasets.
+##### Data Anlysis (Transformation)
+The data analysis was archesterated by calculating maximum and minimum COVID-19 cases and deaths (related to it) occurences globally and locally (Autralian Data)</br>
+The key patterns have been highlighted briefly and visualised in the for of matrix using "plt" library.</br>
 
-Transformation:
+These insights are capable to support informed decision-making in public health, resource allocation, and pandemic management, demonstrating the value of clean, well-processed data in addressing real-world challenges.</br>
 
-Data cleaning: Handling missing values, standardizing formats.
-Data enrichment: Adding calculated fields or merging datasets.
-Loading:
-Store the transformed data into the database.
+#### stage 2 (Amrit Kaur)
+##### User interaction (Transformation)
+After the data merge and before the cleaning process, a user-interactive function has been developed to provide the user with an opportunity to filter the data based upon their requirement. 
 
-Refer to the ETL diagram in docs/ETL_workflow.png for detailed visuals.
+##### Data segregation and exportation (Load)
+The cleaned data, from previous steps, has been further divided according to their specifications and exported in the form of eight .csv files:</br>
+1. "Countries.csv"
+2. "patient database.csv"
+3. "COVID_19_Dataset.csv"
+4. "Aggregated country statistics"
+5. "Australian Statistics.csv"
+6. "Global Statistics.csv"
+7. "coordinates_df.csv"
+8. "Pivot Summary.csv"
 
+#### Stage 3 (Keegan)
+ERD
+![ERD](https://github.com/user-attachments/assets/773100b7-3c1b-4f12-88d1-49e61211c952)
+
+PostgreSQL Coding
+-E
+-T
+-L
+
+Data Importation into PostgreSQL
 Ethical Considerations
-To ensure ethical data handling:
+#### Stage 4 (Patrick Z)
+Final check of the ETL process above
+Presentation slides
 
-Privacy: Sensitive data is anonymized where necessary.
-Bias: Steps have been taken to mitigate data bias during preprocessing.
-Transparency: Documentation clearly outlines the data sources and transformation methods.
-References
-Data Sources:
 
-[Source Name and Link]
-Code References:
 
-External libraries: [Library Name and Documentation Link]
-Code snippets: [Source Name or URL]
-Copy code
 
+
+
+Resources:
+Kaggle
 
 
 
