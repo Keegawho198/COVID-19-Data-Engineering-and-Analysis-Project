@@ -1,6 +1,6 @@
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
---To avoid the import/export error, please imort the csv files in following order: Patient_Database -> coordinates-> Countries->COVID_19_Database
+--To avoid the import/export error, please imort the csv files in following order: Patient_Database -> coordinates-> Countries->COVID_19_Database--
 
 
 CREATE TABLE "COVID_19_Dataset" (
@@ -20,6 +20,10 @@ CREATE TABLE "COVID_19_Dataset" (
         "id"
      )
 );
+Select*from "COVID_19_Dataset";
+
+SELECT COUNT(*)
+FROM "COVID_19_Dataset";
 
 CREATE TABLE "Countries" (
     "Country_Code" varchar(30)   NOT NULL,
@@ -28,6 +32,7 @@ CREATE TABLE "Countries" (
         "Country_Code"
      )
 );
+Select*from "Countries";
 
 CREATE TABLE "Patient_Database" (
     "Case_id" varchar(50)   NOT NULL,
@@ -41,6 +46,7 @@ CREATE TABLE "Patient_Database" (
         "Case_id"
      )
 );
+Select*from"Patient_Database";
 
 CREATE TABLE "Coordinates" (
     "Country_code" varchar(300)   NOT NULL,
@@ -51,6 +57,7 @@ CREATE TABLE "Coordinates" (
         "Country_code"
      )
 );
+select*from"Coordinates";
 
 ALTER TABLE "COVID_19_Dataset" ADD CONSTRAINT "fk_COVID_19_Dataset_Country_Code" FOREIGN KEY("Country_Code")
 REFERENCES "Countries" ("Country_Code");
