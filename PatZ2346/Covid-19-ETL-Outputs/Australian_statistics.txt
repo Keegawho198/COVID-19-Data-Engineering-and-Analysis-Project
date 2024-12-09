@@ -1,0 +1,9 @@
+Average COVID-19 cases in Australia: 64275.34
+
+Maximum cases in Australia: 588813.0 on 2022-01-09
+
+Minimum cases in Australia: 28.0 on 2021-02-21
+
+Maximum deaths in Australia: 1161.0 on 2023-02-05
+
+Minimum deaths in Australia: -76.0 on 2023-07-23
