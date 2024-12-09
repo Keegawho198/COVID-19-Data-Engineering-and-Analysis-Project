@@ -75,12 +75,12 @@ The cleaned data, from previous steps, has been further divided according to the
 ERD
 ![ERD](https://github.com/user-attachments/assets/773100b7-3c1b-4f12-88d1-49e61211c952)
 
-PostgreSQL Coding
--E
--T
--L
+PostgreSQL Coding</br>
+- E
+- T
+- L
 
-Data Importation into PostgreSQL
+Data Importation into PostgreSQL</br>
 Ethical Considerations
 #### Stage 4 (Patrick Z)
 Final check of the ETL process above
