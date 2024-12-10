@@ -4,7 +4,7 @@ import pandas as pd
 from dotenv import load_dotenv
 import psycopg2
 
-load_dotenv()
+load_dotenv(dotenv_path='.env Files/.env')
 
 app = Flask(__name__)
 
