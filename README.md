@@ -51,17 +51,17 @@ The data was cleaned using following steps:
 - Check and adjust datatypes
 
 ##### Data Anlysis (Transformation)
-The data analysis was archesterated by calculating maximum and minimum COVID-19 cases and deaths (related to it) occurences globally and locally (Autralian Data)</br>
+The data analysis focused on calculating the maximum and minimum occurrences of COVID-19 cases and deaths globally and locally. Key patterns and insights have been identified and briefly highlighted. These findings were visualized using the matplotlib library in the form of a matrix, providing a clear and concise representation of the trends.</br>
 The key patterns have been highlighted briefly and visualised in the for of matrix using "plt" library.</br>
 
 These insights are capable to support informed decision-making in public health, resource allocation, and pandemic management, demonstrating the value of clean, well-processed data in addressing real-world challenges.</br>
 
 #### stage 2 (Amrit Kaur)
 ##### User interaction (Transformation)
-After the data merge and before the cleaning process, a user-interactive function has been developed to provide the user with an opportunity to filter the data based upon their requirement. 
+After merging the data but before initiating the cleaning process, a user-interactive function was developed. This function allows users to filter the data based on their specific requirements, enabling a more customized and focused analysis.
 
 ##### Data segregation and exportation (Load)
-The cleaned data, from previous steps, has been further divided according to their specifications and exported in the form of eight .csv files:</br>
+The cleaned data from the previous steps was further categorized based on specific criteria. These subsets were then exported into eight separate .csv files for streamlined analysis and reporting.</br>
 1. "Countries.csv"
 2. "patient database.csv"
 3. "COVID_19_Dataset.csv"
