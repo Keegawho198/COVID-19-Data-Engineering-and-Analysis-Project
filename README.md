@@ -71,7 +71,7 @@ The cleaned data, from previous steps, has been further divided according to the
 7. "coordinates_df.csv"
 8. "Pivot Summary.csv"
 
-#### Stage 3 (Keegan)
+#### Stage 3 
 ERD
 ![ERD](https://github.com/user-attachments/assets/773100b7-3c1b-4f12-88d1-49e61211c952)
 
@@ -81,7 +81,14 @@ PostgreSQL Coding</br>
 - L
 
 Data Importation into PostgreSQL</br>
+
 Ethical Considerations
+
+In our project analyzing COVID-19 cases globally, we prioritize ethical considerations by ensuring that all data sourced is obtained through legitimate and transparent means, respecting the privacy and confidentiality of individuals. We reviewed our dataset for any personally identifiable information (PII) and took necessary steps to anonymize it, as it is crucial to protect the identities of those affected by the pandemic. 
+
+Additionally, We aimed to ensure that our analysis represent a diverse population, considering factors such as geographical disparities, to avoid biases or excluding vulnerable groups. By adhering to these ethical principles, we aimed to safeguard the rights of individuals represented in our data.
+
+
 #### Stage 4 (Patrick Z)
 Final check of the ETL process above
 Presentation slides
