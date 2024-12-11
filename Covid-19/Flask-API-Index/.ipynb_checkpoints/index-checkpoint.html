@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Data Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        header p {
+            color: #555;
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #007BFF;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .info {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #eaf7ff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .intro p {
+            color: #333;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COVID-19 Data Search</h1>
+        <p>Analyze and explore COVID-19 data by country</p>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <img src="{{ url_for('heatmap_image', filename='Heatmap.png') }}" alt="COVID-19 Heatmap" style="width:100%; max-width:800px; height:auto;">
+            <p>Welcome to the COVID-19 Data Search Application. Here you can search for COVID-19 data by Country. Just enter a Country name and hit 'Search'!</p>
+        </div>
+        <form id="searchForm">
+            <input type="text" id="countryInput" placeholder="Enter country name">
+            <button type="submit">Search</button>
+        </form>
+        <div class="results" id="results"></div>
+
+        <div class="info">
+            <p>To view all COVID-19 data in pretty print, add <code>/covid_data</code> to the URL like this:</p>
+            <p><code>http://127.0.0.1:5000/covid_data</code></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const country = document.getElementById('countryInput').value;
+            const response = await fetch(`/covid_data?country=${country}`);
+            const data = await response.json();
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+
+            if (data.length === 0) {
+                resultsDiv.innerHTML = '<p>No data found for the specified country.</p>';
+            } else {
+                const table = document.createElement('table');
+                table.innerHTML = `
+                    <tr>
+                        <th>Country</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Cumulative Cases</th>
+                        <th>Cumulative Deaths</th>
+                    </tr>
+                `;
+
+                data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.Country}</td>
+                        <td>${row['Start Date']}</td>
+                        <td>${row['End Date']}</td>
+                        <td>${row['Cumulative Cases']}</td>
+                        <td>${row['Cumulative Deaths']}</td>
+                    `;
+                    table.appendChild(tr);
+                });
+
+                resultsDiv.appendChild(table);
+            }
+        });
+    </script>
+</body>
+</html>
