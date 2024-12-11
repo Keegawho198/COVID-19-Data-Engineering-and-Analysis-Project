@@ -71,18 +71,22 @@ The cleaned data, from previous steps, has been further divided according to the
 7. "coordinates_df.csv"
 8. "Pivot Summary.csv"
 
-#### Stage 3 
-ERD
+#### Stage 3 (Keegan)
+##### ERD
 ![ERD](https://github.com/user-attachments/assets/773100b7-3c1b-4f12-88d1-49e61211c952)
 
+This ERD serves as a blueprint for our database design, helping us understand how data is structured and how different entities interact with each other. This is essential for both documenting existing databases and planning new ones. </br>
+
 PostgreSQL Coding</br>
-- E
-- T
-- L
 
 Data Importation into PostgreSQL</br>
 
-Ethical Considerations
+To create the table into the Postgres SQL use the COVID-19-ETL_Tables.sql.
+
+Then, proceed to import the CSV files and use the Retrieve-Data-Statements.sql file to see the output of each table with the CSV files imported.
+
+
+##### Ethical Considerations
 
 In our project analyzing COVID-19 cases globally, we prioritize ethical considerations by ensuring that all data sourced is obtained through legitimate and transparent means, respecting the privacy and confidentiality of individuals. We reviewed our dataset for any personally identifiable information (PII) and took necessary steps to anonymize it, as it is crucial to protect the identities of those affected by the pandemic. 
 
