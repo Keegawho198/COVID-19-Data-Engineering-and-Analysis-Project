@@ -51,17 +51,17 @@ The data was cleaned using following steps:
 - Check and adjust datatypes
 
 ##### Data Anlysis (Transformation)
-The data analysis was archesterated by calculating maximum and minimum COVID-19 cases and deaths (related to it) occurences globally and locally (Autralian Data)</br>
+The data analysis focused on calculating the maximum and minimum occurrences of COVID-19 cases and deaths globally and locally. Key patterns and insights have been identified and briefly highlighted. These findings were visualized using the matplotlib library in the form of a matrix, providing a clear and concise representation of the trends.</br>
 The key patterns have been highlighted briefly and visualised in the for of matrix using "plt" library.</br>
 
 These insights are capable to support informed decision-making in public health, resource allocation, and pandemic management, demonstrating the value of clean, well-processed data in addressing real-world challenges.</br>
 
 #### stage 2 (Amrit Kaur)
 ##### User interaction (Transformation)
-After the data merge and before the cleaning process, a user-interactive function has been developed to provide the user with an opportunity to filter the data based upon their requirement. 
+After merging the data but before initiating the cleaning process, a user-interactive function was developed. This function allows users to filter the data based on their specific requirements, enabling a more customized and focused analysis.
 
 ##### Data segregation and exportation (Load)
-The cleaned data, from previous steps, has been further divided according to their specifications and exported in the form of eight .csv files:</br>
+The cleaned data from the previous steps was further categorized based on specific criteria. These subsets were then exported into eight separate .csv files for streamlined analysis and reporting.</br>
 1. "Countries.csv"
 2. "patient database.csv"
 3. "COVID_19_Dataset.csv"
@@ -72,16 +72,27 @@ The cleaned data, from previous steps, has been further divided according to the
 8. "Pivot Summary.csv"
 
 #### Stage 3 (Keegan)
-ERD
+##### ERD
 ![ERD](https://github.com/user-attachments/assets/773100b7-3c1b-4f12-88d1-49e61211c952)
 
+This ERD serves as a blueprint for our database design, helping us understand how data is structured and how different entities interact with each other. This is essential for both documenting existing databases and planning new ones. </br>
+
 PostgreSQL Coding</br>
-- E
-- T
-- L
 
 Data Importation into PostgreSQL</br>
-Ethical Considerations
+
+To create the table into the Postgres SQL use the COVID-19-ETL_Tables.sql.
+
+Then, proceed to import the CSV files and use the Retrieve-Data-Statements.sql file to see the output of each table with the CSV files imported.
+
+
+##### Ethical Considerations
+
+In our project analyzing COVID-19 cases globally, we prioritize ethical considerations by ensuring that all data sourced is obtained through legitimate and transparent means, respecting the privacy and confidentiality of individuals. We reviewed our dataset for any personally identifiable information (PII) and took necessary steps to anonymize it, as it is crucial to protect the identities of those affected by the pandemic. 
+
+Additionally, We aimed to ensure that our analysis represent a diverse population, considering factors such as geographical disparities, to avoid biases or excluding vulnerable groups. By adhering to these ethical principles, we aimed to safeguard the rights of individuals represented in our data.
+
+
 #### Stage 4 (Patrick Z)
 Final check of the ETL process above
 Presentation slides
