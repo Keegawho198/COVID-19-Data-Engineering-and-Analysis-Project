@@ -94,12 +94,12 @@ Additionally, We aimed to ensure that our analysis represent a diverse populatio
 
 
 #### Stage 4 (Patrick Z)
-Final check of the ETL process above
-Presentation slides
+Flask web application that enables users to interact with the data intuitively.
 
+![Flask1](https://github.com/user-attachments/assets/36486335-6699-47fc-a51f-7426771a4211)
+![Flask2](https://github.com/user-attachments/assets/df3f9048-424f-48f6-aebe-bc1a60bf838d)
 
-
-
+Users can search for data by country, or view the results in a pandas DataFrame.
 
 
 Resources:
