@@ -96,8 +96,8 @@ Additionally, We aimed to ensure that our analysis represent a diverse populatio
 #### Stage 4 (Patrick Z)
 Flask web application that enables users to interact with the data intuitively.
 
--Create an index.html file
--Create an app.py file
+-Create an index.html file  
+-Create an app.py file  
 
 Save both files and run the app.py on a browser html (http://127.0.0.1:5000)
 
