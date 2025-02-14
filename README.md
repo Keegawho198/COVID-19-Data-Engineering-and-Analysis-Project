@@ -27,7 +27,7 @@ and run the code in Pandas Jupyter Notebook.
 
 ## Data Engineering process
 This data engineering project has been divided in 4 stages.</br>
-#### Stage 1 (Mandeep Sohi)
+#### Stage 1 
 #### Data selection
 As a team we decieded to use COVID-19 statistics on a global scale to perform comprehensive data engineering and analysis. 
 
@@ -56,7 +56,7 @@ The key patterns have been highlighted briefly and visualised in the for of matr
 
 These insights are capable to support informed decision-making in public health, resource allocation, and pandemic management, demonstrating the value of clean, well-processed data in addressing real-world challenges.</br>
 
-#### stage 2 (Amrit Kaur)
+#### stage 2 
 ##### User interaction (Transformation)
 After merging the data but before initiating the cleaning process, a user-interactive function was developed. This function allows users to filter the data based on their specific requirements, enabling a more customized and focused analysis.
 
@@ -71,7 +71,7 @@ The cleaned data from the previous steps was further categorized based on specif
 7. "coordinates_df.csv"
 8. "Pivot Summary.csv"
 
-#### Stage 3 (Keegan)
+#### Stage 3 
 ##### ERD
 ![ERD](https://github.com/user-attachments/assets/773100b7-3c1b-4f12-88d1-49e61211c952)
 
@@ -93,7 +93,7 @@ In our project analyzing COVID-19 cases globally, we prioritize ethical consider
 Additionally, We aimed to ensure that our analysis represent a diverse population, considering factors such as geographical disparities, to avoid biases or excluding vulnerable groups. By adhering to these ethical principles, we aimed to safeguard the rights of individuals represented in our data.
 
 
-#### Stage 4 (Patrick Z)
+#### Stage 4 
 Flask web application that enables users to interact with the data intuitively.
 
 -Create an index.html file  
